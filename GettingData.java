@@ -31,5 +31,12 @@ public class GettingData {
         String j = "USD";
 
         System.out.println (obj.returnCode(j));
+        //inside the empty brackets we need to figure out how to input the user input
+        //System.out.println(exchangeRate(obj.returnCode(), obj.returnCode(), moneyAmount));
+    }
+    
+    public static double exchangeRate(double currencyFrom, double currencyTo, double moneyAmount) {
+        double exchangeRate = currencyTo / currencyFrom;
+        return moneyAmount * exchangeRate;
     }
 }
